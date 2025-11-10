@@ -44,6 +44,13 @@ After installing, you need to set your **Gemini API Key**:
 2. Search for `codepulse.geminiApiKey`.
 3. Enter your Gemini API Key.
 
+or 
+Add in your setting.json
+{
+    "editor.minimap.enabled": false,
+    "codepulse.geminiApiKey": "1234567890abcdef"
+}
+
 ---
 
 ## How to Use codepulse AI Code Reviewer
