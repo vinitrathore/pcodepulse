@@ -39,6 +39,38 @@ https://codpulse.netlify.app
 - Click **Install** (Later)
 - Download the extension from Github (for now download .vsix) 
 ---
+## How to Install in VS Code
+
+Follow these steps to install the extension in Visual Studio Code using the `.vsix` file.
+
+### 1. Download the Extension
+- Visit the [GitHub repository](#) of the extension.
+- Locate the `.vsix` file (usually under the **Releases** section).
+- Download the file to a folder on your computer.
+
+### 2. Open Visual Studio Code
+- Launch VS Code on your machine.
+
+### 3. Open the Extensions Menu
+- Click on the **Extensions** icon on the left sidebar (four squares).  
+- Alternatively, press:
+  - `Ctrl + Shift + X` on Windows/Linux  
+  - `Cmd + Shift + X` on macOS
+
+### 4. Install from VSIX
+- Click the **three-dot menu** at the top-right corner of the Extensions pane.
+- Select **“Install from VSIX…”**
+- Navigate to the folder where the `.vsix` file was downloaded.
+- Select the file and click **Open**.
+
+### 5. Reload VS Code
+- After installation, VS Code may prompt you to **Reload**.
+- Click **Reload** to activate the extension.
+
+### ✅ Notes
+- Make sure VS Code is updated to the latest version for compatibility.
+- This method works for extensions not published in the VS Code Marketplace.
+
 
 ### Step 2: Visit the Website & Login
 - Open 👉 https://codpulse.netlify.app
