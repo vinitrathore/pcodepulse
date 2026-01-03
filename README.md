@@ -1,97 +1,219 @@
-# codepulse
+# 🚀 CodePulse – AI Code Reviewer (VS Code Extension)
 
-**AI Code Reviewer for VS Code**
+CodePulse is a powerful Visual Studio Code extension that reviews your code using AI and suggests cleaner, better, and optimized versions.  
+You can review selected code or the entire file and insert the improved code with a single click.
 
-`codepulse` is a VS Code extension that uses AI (Gemini API) to review your code and suggest improvements for readability, efficiency, and best practices. It works with multiple languages like JavaScript, Python, C++, Java, C, React, and more.
-
----
-
-## Features
-
-- Review your code using a single command or keyboard shortcut (`Ctrl+Alt+R`).
-- Highlights inefficient code and suggests improvements.
-- Works on selected code or entire files.
-- Supports multiple programming languages.
-- Shows a panel with **AI review** and **improved code**.
-- Copy or replace code directly in your editor.
+🌐 **Official Website**  
+https://codpulse.netlify.app
 
 ---
 
-## Requirements
+## ✨ Features
 
-- VS Code v1.105.0 or later
-- Node.js installed
-- Gemini API Key (set in VS Code settings)
-
----
-
-## Installation (from VSIX)
-
-1. Download the `.vsix` file (e.g., `codepulse-0.0.1.vsix`).
-2. Open VS Code.
-3. Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS) to open the Command Palette.
-4. Type `Extensions: Install from VSIX` and select it.
-5. Browse to your `.vsix` file and click **Open**.
-6. The extension will be installed.
+- 🔍 Review selected code or full file
+- 🤖 AI-powered intelligent code review
+- 🧠 Language-aware suggestions
+- ✂️ Replace selected code or entire file
+- 📂 Automatically reopens file if closed
+- 🪄 One-click improved code insertion
+- ⌨️ Keyboard shortcut support
 
 ---
 
-## Extension Settings
+## 📦 Extension Details
 
-After installing, you need to set your **Gemini API Key**:
+- **Name:** CodePulse  
+- **Publisher:** Vinit Rathore  
+- **Version:** 0.0.1  
+- **Category:** Other  
+- **VS Code Required:** ^1.105.0  
 
-1. Go to **File → Preferences → Settings** (or `Ctrl+,`).
-2. Search for `codepulse.geminiApiKey`.
-3. Enter your Gemini API Key.
+---
 
-or 
-Add in your setting.json
+## 🚀 Getting Started (Step-by-Step)
+
+### Step 1: Download the Extension (Later)
+- Open **VS Code** (Later)
+- Go to **Extensions Marketplace** (Later)
+- Search for **CodePulse** (Later)
+- Click **Install** (Later)
+- Download the extension from Github (for now download .vsix) 
+---
+
+### Step 2: Visit the Website & Login
+- Open 👉 https://codpulse.netlify.app
+- Sign up or log in
+- Go to your **Dashboard**
+- Generate your **User API Key**
+
+---
+
+### Step 3: Configure CodePulse in VS Code
+
+Open VS Code Settings:
+
+File → Preferences → Settings → CodePulse
+
+
+Add the following values:
+
+```json
 {
-    "editor.minimap.enabled": false,
-    "codepulse.geminiApiKey": "1234567890abcdef"
+  "codepulse.userKey": "YOUR_GENERATED_USER_KEY",
+  "codepulse.serverUrl": "https://codepulse-backend-gv81.onrender.com"
 }
 
+✅ Now CodePulse is ready to use.
+
+⌨️ How to Use CodePulse
+Method 1: Keyboard Shortcut
+Ctrl + Alt + R
+
+Method 2: Right Click
+
+
+Open any file in VS Code
+
+
+Select code (optional)
+
+
+Right-click → AI Code Review (CodePulse)
+
+
+
+🧠 How CodePulse Works
+
+
+Open a code file
+
+
+Select code (or leave empty to review full file)
+
+
+Run CodePulse
+
+
+Code is securely sent to the AI backend
+
+
+Review opens in a side panel
+
+
+Improved code is shown separately
+
+
+Click Insert Improved Code
+
+
+If the file is closed:
+
+
+CodePulse asks for permission
+
+
+Reopens the file
+
+
+Inserts the improved code automatically
+
+
+
+🖥️ Review Panel
+
+
+Shows AI review feedback
+
+
+Displays improved code clearly
+
+
+Button to insert improved code instantly
+
+
+
+📁 Project Structure
+codepulse/
+│
+├── extension.js
+├── package.json
+├── images/
+│   └── vlogosvg.png
+└── README.md
+
+
+🛠️ Tech Stack
+
+
+VS Code Extension API
+
+
+Node.js
+
+
+node-fetch
+
+
+Google Gemini AI (via backend)
+
+
+
+❗ Common Issues & Fixes
+❌ “Open a file first”
+✔️ Open any file in the editor
+❌ “Set userKey and serverUrl in settings”
+✔️ Add both values correctly in VS Code settings
+❌ File closed while inserting code
+✔️ Click Yes when prompted to reopen the file
+
+🌍 Live Frontend
+Manage your account, API keys, and plans here:
+👉 https://codpulse.netlify.app
+
+👨‍💻 Author
+Vinit Rathore
+
+⭐ Support & Feedback
+If you like CodePulse:
+
+
+⭐ Star the repository
+
+
+🐞 Report bugs
+
+
+💡 Suggest new features
+
+
+
+🚧 Coming Soon
+
+
+VS Code Marketplace optimization
+
+
+Screenshots & demo videos
+
+
+CHANGELOG.md
+
+
+Privacy Policy & Terms
+
+
+Subscription plans
+
+
+
+Happy Coding with CodePulse 🚀
+
 ---
 
-## How to Use codepulse AI Code Reviewer
+If you want next, I can:
+- Make it **perfect for VS Code Marketplace**
+- Write **Privacy Policy / Terms**
+- Add **pricing & product copy**
+- Create **landing page content**
 
-1. Open any code file in VS Code.
-2. Select the portion of code you want to review.  
-   - If no code is selected, the extension will review the entire file.
-3. Run the AI Code Review command:
-   - **Command Palette:** Press `Ctrl+Shift+P` → type `AI Code Review (codePulse)` → hit Enter
-   - **Keyboard Shortcut:** Press `Ctrl+Alt+R` (works when editor is focused)
-   - **Right-Click Menu:** Right-click inside the editor → choose `AI Code Review (codePulse)`
-4. A panel will appear showing:
-   - **AI Review:** Explanation of issues and suggestions.
-   - **Improved Code:** Optimized version of your code.
-5. Click **Insert Improved Code** to replace the selected code (or the whole file if nothing is selected).
-
-> ⚠️ Tip: Hover over the **Insert Improved Code** button to see a tooltip warning:  
-> "Before clicking, select the area where you want to paste. Otherwise, it will append to your active file."
-
----
-
-## Known Issues
-
-- Requires a valid Gemini API key.
-- Internet connection is needed to communicate with the AI API.
-- Only works with VS Code versions >= 1.105.0.
-
----
-
-## Release Notes
-
-### 0.0.1
-- Initial release of codepulse.
-
----
-
-## For More Information
-
-- [VS Code Extensions Documentation](https://code.visualstudio.com/api)
-- [Gemini AI API](https://developers.google.com/)
-
----
-
-**Enjoy reviewing your code with AI!**
+Just say 👍
