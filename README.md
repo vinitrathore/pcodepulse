@@ -33,7 +33,7 @@ https://codpulse.netlify.app
 ## 🚀 Getting Started (Step-by-Step)
 
 ### Step 1: Download the Extension (Later)
-- Open **VS Code** (Later)
+- Open **VS Code**
 - Go to **Extensions Marketplace** (Later)
 - Search for **CodePulse** (Later)
 - Click **Install** (Later)
